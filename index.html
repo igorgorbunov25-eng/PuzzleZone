@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090914">
+<title>PuzzleZone — головоломки</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="#home">PZ Puzzle<span>Zone</span></a>
+<nav><a href="#games">Игры</a><a href="#features">Возможности</a><a href="#download">Установка</a></nav>
+</header>
+<main id="home">
+<section class="hero">
+<div class="eyebrow">ТВОЯ ТЕРРИТОРИЯ ЛОГИКИ</div>
+<h1>Мозг любит<br><span>вызовы.</span></h1>
+<p>Небольшие игры. Большие победы. Проверяй логику и бей рекорды.</p>
+<a class="btn" href="#games">Выбрать игру →</a>
+</section>
+<section class="section" id="games">
+<h2>Выбери свой вызов</h2>
+<div class="cards">
+<article class="card"><div class="game-icon">🔢</div><h3>Пятнашки</h3><p>Собери числа по порядку.</p><button data-game="sliding">Играть</button></article>
+<article class="card"><div class="game-icon">🧠</div><h3>Найди пару</h3><p>Найди одинаковые символы.</p><button data-game="memory">Играть</button></article>
+<article class="card"><div class="game-icon">🔮</div><h3>Продолжи ряд</h3><p>Найди следующее число.</p><button data-game="sequence">Играть</button></article>
+</div>
+</section>
+<section class="play-section" id="play">
+<h2 id="gameTitle">Пятнашки</h2><p id="gameDescription">Собери числа по порядку.</p>
+<div class="stats"><span>Ходы: <b id="moves">0</b></span><span>Время: <b id="timer">00:00</b></span><span>Рекорд: <b id="best">—</b></span></div>
+<button id="newGame">Новая игра</button>
+<div id="gameBoard" class="game-board"></div>
+<div id="gameMessage" class="message"></div>
+</section>
+<section class="section" id="features"><h2>Возможности</h2><p class="muted">Бесплатные игры, рекорды и поддержка компьютеров и телефонов.</p></section>
+<section class="download" id="download"><h2>PuzzleZone</h2><p>Играй в головоломки прямо в браузере!</p><button id="installBtn" hidden>Установить приложение</button><p id="installHelp" class="muted small">На iPhone: открой сайт в Safari → «Поделиться» → «На экран Домой».</p></section>
+</main>
+<footer>PUZZLEZONE © 2026</footer>
+<script src="app.js"></script>
+</body></html>
